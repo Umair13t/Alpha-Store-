@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — Alpha Store</title>
+  <meta name="description" content="Browse every product at Alpha Store: phones, laptops, audio, consoles and accessories.">
+  <link rel="icon" type="image/png" sizes="512x512" href="/crop.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+<body>
+  <div class="topbar">Free delivery on orders over $200 · 7-day easy returns</div>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html">
+        <!-- <img src="/logo.png" alt="Alpha Store logo" onerror="this.style.display='none'"> -->
+        <span><i class="fa-solid fa-bolt"></i> Alpha Store</span>
+      </a>
+
+      
+      <nav class="nav__menu">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product_page.html">Products</a></li>
+          <li><a href="index.html#why">Why us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="cart-btn" href="product.html" aria-label="Open cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="nav__auth">
+          <!-- <button class="btn btn--ghost">Sign Up</button>
+          <button class="btn btn--primary">Login <i class="fa-solid fa-right-to-bracket"></i></button>
+        </div> -->
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="wrap">
+      <div class="section-head">
+        <h2>Alpha Products List</h2>
+        <p>Search, filter and sort the full catalogue.</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="toolbar__search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="searchInput" placeholder="Search by name, brand or category" aria-label="Search products">
+        </div>
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All categories</option>
+        </select>
+        <select id="sortSelect" aria-label="Sort products">
+          <option value="default">Sort: featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+
+      <div class="products js_products"></div>
+    </section>
+  </main>
+
+  <!-- PRODUCT CARD TEMPLATE -->
+  <template id="template">
+    <article class="card">
+      <div class="card__media">
+        <span class="card__cat">Category</span>
+        <button class="card__fav" aria-label="Add to wishlist" aria-pressed="false">
+          <i class="fa-regular fa-heart"></i>
+        </button>
+        <img src="" alt="">
+      </div>
+      <div class="card__body">
+        <h3 class="card__title">Product name</h3>
+        <div class="chips">
+          <span class="chip chip--color">Color</span>
+          <span class="chip chip--company">Brand</span>
+        </div>
+        <div class="rating">
+          <span class="rating__stars"></span><span></span>
+        </div>
+        <p class="card__desc"></p>
+        <div class="qty">
+          <span class="qty__label">Quantity</span>
+          <button class="qty__btn qty__minus" aria-label="Decrease quantity">−</button>
+          <span class="qty__value">1</span>
+          <button class="qty__btn qty__plus" aria-label="Increase quantity">+</button>
+        </div>
+        <div class="card__foot">
+          <div class="price"><small>Price</small><span class="price-value">$0.00</span></div>
+          <button class="btn btn--primary addtocart">Add to cart <i class="fa-solid fa-cart-plus"></i></button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <a href="index.html"><img src="/logo.png" alt="Alpha Store" onerror="this.style.display='none'"></a>
+        <p>Welcome to Alpha Store — your best online shopping platform for everyday technology.</p>
+      </div>
+      <div>
+        <h3>Alpha Store</h3>
+        <p>Your trusted destination for quality products, great prices and fast delivery.</p>
+      </div>
+      <div>
+        <h3>Our social media</h3>
+        <ul>
+          <li><a href="https://github.com/"><i class="fa-brands fa-github"></i> Github</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="#"><i class="fa-brands fa-pinterest"></i> Pinterest</a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h3>Contact info</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Sargodha, Pakistan</p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+923484086903">+92 348 4086903</a></p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:sulphite92@gmail.com">sulphite92@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">© <span class="year">2026</span> Alpha Store. All rights reserved.</div>
+  </footer>
+</body>
+
+</html>

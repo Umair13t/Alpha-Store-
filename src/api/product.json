@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Smart Phone",
+    "category": "Electronics",
+    "description": "Slim 5G smartphone with a 120Hz AMOLED display, triple camera system and all-day battery life.",
+    "price": 678.0,
+    "image": "/cell.png",
+    "color": "Grey",
+    "company": "Samsung",
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "name": "Air Bugs",
+    "category": "Accessories",
+    "description": "True-wireless earbuds with active noise cancellation, low-latency gaming mode and a pocket charging case.",
+    "price": 23.23,
+    "image": "/air.png",
+    "color": "Black",
+    "company": "Laravel",
+    "rating": 4.0
+  },
+  {
+    "id": 3,
+    "name": "Wireless Headphone",
+    "category": "Accessories",
+    "description": "Over-ear wireless headphones with deep bass, plush memory-foam cups and up to 40 hours of playback.",
+    "price": 32.21,
+    "image": "/wireless.png",
+    "color": "Black",
+    "company": "Noise",
+    "rating": 4.6
+  },
+  {
+    "id": 4,
+    "name": "4k Multicolor Lcd",
+    "category": "Electronics",
+    "description": "4K UHD smart LED display with HDR10 support, slim bezels and built-in streaming apps.",
+    "price": 473.22,
+    "image": "/lcd.png",
+    "color": "White",
+    "company": "Sony",
+    "rating": 4.8
+  },
+  {
+    "id": 5,
+    "name": "GTA6 Supported Play Station 5",
+    "category": "Electronics",
+    "description": "Next-gen console with ultra-fast SSD loading, ray tracing and a haptic feedback controller.",
+    "price": 1234.67,
+    "image": "/Ps5.png",
+    "color": "White",
+    "company": "Sony",
+    "rating": 5.0
+  },
+  {
+    "id": 6,
+    "name": "MultiTasking Computer",
+    "category": "Electronics",
+    "description": "Multitasking desktop PC built for work and study, with a fast SSD and plenty of RAM for heavy tabs.",
+    "price": 567.34,
+    "image": "/image2.png",
+    "color": "Grey",
+    "company": "Dell",
+    "rating": 4.3
+  },
+  {
+    "id": 7,
+    "name": "8D Audio Speaker",
+    "category": "Accessories",
+    "description": "8D surround Bluetooth speaker with punchy bass, USB/AUX input and long battery backup.",
+    "price": 221.34,
+    "image": "/headphone.png",
+    "color": "Black",
+    "company": "Audionic",
+    "rating": 4.1
+  },
+  {
+    "id": 8,
+    "name": "Al-Nsar Football Jersy",
+    "category": "Sports",
+    "description": "Breathable official-style football jersey in lightweight dri-fit fabric for training and match days.",
+    "price": 60.22,
+    "image": "/alnsar.png",
+    "color": "Yellow & Blue",
+    "company": "Al-nsar",
+    "rating": 3.9
+  },
+  {
+    "id": 9,
+    "name": "Bluetooth Smart Watch",
+    "category": "Accessories",
+    "description": "Bluetooth smart watch with heart-rate and SpO2 tracking, sleep insights and a bright always-on display.",
+    "price": 102.23,
+    "image": "/wat.png",
+    "color": "Black",
+    "company": "Samsung",
+    "rating": 4.4
+  }
+]
