@@ -15,36 +15,32 @@
   <div class="topbar">Free delivery on orders over $200 · 7-day easy returns</div>
 
   <header class="nav">
-    <div class="nav__inner">
-      <a class="nav__logo" href="index.html">
-        <!-- <img src="/logo.png" alt="Alpha Store logo" onerror="this.style.display='none'"> -->
-        <span><i class="fa-solid fa-bolt"></i> Alpha Store</span>
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">
+      <span><i class="fa-solid fa-bolt"></i> Alpha Store</span>
+    </a>
+
+    <nav class="nav__menu" id="navMenu">
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product_page.html">Products</a></li>
+        <li><a href="index.html#why">Why us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="cart-btn" href="product.html" aria-label="Open cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
       </a>
 
-      
-      <nav class="nav__menu">
-        <ul class="nav__links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="product_page.html">Products</a></li>
-          <li><a href="index.html#why">Why us</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-        <div class="nav__actions">
-          <a class="cart-btn" href="product.html" aria-label="Open cart">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span class="cart-count">0</span>
-          </a>
-          <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-        <div class="nav__auth">
-          <!-- <button class="btn btn--ghost">Sign Up</button>
-          <button class="btn btn--primary">Login <i class="fa-solid fa-right-to-bracket"></i></button>
-        </div> -->
-      </nav>
+      <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
 
   <main class="page">
     <section class="wrap">
@@ -81,7 +77,7 @@
         <button class="card__fav" aria-label="Add to wishlist" aria-pressed="false">
           <i class="fa-regular fa-heart"></i>
         </button>
-        <img src="" alt="">
+        <img src="" alt="" loading="lazy">
       </div>
       <div class="card__body">
         <h3 class="card__title">Product name</h3>
